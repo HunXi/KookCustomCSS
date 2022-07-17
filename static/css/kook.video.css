@@ -1,0 +1,253 @@
+:root {
+    --coustom-menu-background: rgba(0, 0, 0, 0.85);
+    --globle-transparent: rgba(0, 0, 0, 0.25);
+    --sec-transparent: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 屏蔽下载广告 */
+
+#icon-app-download {
+    display: none;
+}
+
+div.banner-list {
+    display: none;
+}
+
+div.close {
+    display: none;
+}
+
+
+/* 全局字体 */
+
+body.theme-dark {
+    font-family: '问藏书房', PingFang SC, Microsoft YaHei New, Segoe UI Emoji, 微软雅黑, Microsoft Yahei, Microsoft JhengHei, 宋体, SimSun, Helvetica Neue, Helvetica, Arial, 'sans-serif';
+}
+
+
+/* 全局遮罩 置透明 */
+
+div.content-wrapper-box.app-content-wrapper {
+    background-color: transparent;
+}
+
+
+/* 去除一些没卵用的圆角 */
+
+div.content-wrapper-box.app-content-wrapper {
+    border-radius: unset;
+}
+
+
+/* 发现服务器页面背景透明 */
+
+div.guide-page {
+    background-color: transparent;
+}
+
+
+/* 标题栏 着色 高度调整 */
+
+div.win-title-bar {
+    height: 22px;
+    background-color: var(--globle-transparent);
+}
+
+
+/* log调整 */
+
+div.win-title-bar .win-title-inner {
+    padding-left: 10px;
+    padding-right: 16px;
+}
+
+.win-title-bar div.win-logo {
+    width: 37px;
+    height: 21px;
+}
+
+
+/* 服务器 标题 */
+
+div.server-left-top-menu.active {
+    background-color: var(--globle-transparent);
+}
+
+div.server-left-top-menu.active,
+.server-left-top-menu:not(.guest):active,
+.server-left-top-menu:not(.guest):hover {
+    background-color: var(--globle-transparent);
+}
+
+
+/* 服务器 菜单 背景色 */
+
+div.server-left-top-menu .top-menu {
+    background-color: var(--coustom-menu-background);
+}
+
+
+/* 频道 */
+
+
+/* 频道 选中项目 背景色 */
+
+div.channel-item.active .new-audio-channel-title,
+.channel-item.active .newchannel-title {
+    background-color: var(--globle-transparent);
+}
+
+
+/* 频道 去除频道消息预览 */
+
+div.channel-content-info {
+    display: none;
+}
+
+.channel-item .newchannel-title .channel-top-title {
+    /* 加个下外边距 挤一下频道名称 */
+    margin-bottom: 5px;
+}
+
+
+/* banner 调整 */
+
+div.banner-box {
+    margin: 0 16px 16px;
+}
+
+div.banner-box>img {
+    border-radius: unset;
+}
+
+
+/* 频道列表 宽度调整 */
+
+div.server-left-container {
+    flex: 1 0 150px;
+}
+
+
+/* 声音 面板 */
+
+
+/* 背景色 */
+
+div.audio-channel-box {
+    background-color: transparent;
+    border: unset;
+}
+
+
+/* 视频 背景层 */
+
+div#bg {
+    position: absolute;
+}
+
+video#v1 {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* 聊天 区域 */
+
+
+/* 消息菜单 背景色 */
+
+.user-setting-menu {
+    background-color: var(--coustom-menu-background);
+}
+
+
+/* 消息悬停菜单 背景色 */
+
+div.message-context-menu-button {
+    background-color: var(--sec-transparent);
+}
+
+
+/* 图标 颜色 */
+
+div.room-layout .room-content-slidebar>.icon:not(.active) {
+    color: #fff;
+}
+
+
+/* 消息输入框 背景色 */
+
+div.text-room-container .send-ctrl-wrapper {
+    background-color: var(--globle-transparent);
+}
+
+
+/* 卡片消息 背景色 */
+
+div.kui-card {
+    background-color: var(--globle-transparent);
+}
+
+
+/* 卡片消息 展示全部 按钮 背景色 */
+
+.theme-dark .kui-card div.show-all {
+    background-color: var(--sec-transparent);
+}
+
+
+/* 用户列表 */
+
+
+/* 调整用户列表 宽度 */
+
+div.user-list-container {
+    width: 200px;
+}
+
+
+/* 设置页面 */
+
+
+/* 全局背景 */
+
+div.setting-page-mask {
+    background-color: var(--globle-transparent);
+    backdrop-filter: blur(5px);
+}
+
+
+/* 设置项 背景色 */
+
+div.setting-form,
+.setting-page-panel-body {
+    border-radius: 10px;
+    background-color: var(--globle-transparent);
+}
+
+
+/* @文字跑马灯 */
+
+.mention-user-name {
+    background: -webkit-linear-gradient( left, #ffffff, #ff0000 6.25%, #ff7d00 12.5%, #ffff00 18.75%, #00ff00 25%, #00ffff 31.25%, #0000ff 37.5%, #ff00ff 43.75%, #ffff00 50%, #ff0000 56.25%, #ff7d00 62.5%, #ffff00 68.75%, #00ff00 75%, #00ffff 81.25%, #0000ff 87.5%, #ff00ff 93.75%, #ffff00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: slide 2s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}

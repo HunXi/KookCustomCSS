@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" id="favicon" href="/app/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="KOOK,KOOK语音,开黑,连麦,游戏,游戏语音,组队,游戏组队,队伍语音,群聊" />
+    <meta name="description" content="KOOK是专属游戏玩家的语音和组队工具，安全免费、没有广告、低占用高质量。全新的组队设计，给你的游戏体验带来新的可能。" />
+    <meta property="og:site_name" content="KOOK" />
+    <meta property="og:image" content="https://www.kookapp.cn/favicon.ico" />
+    <meta property="og:image:type" content="image/ico" />
+    <meta name="theme-color" content="#46a5f7" />
+    <title>KOOK</title>
+    <script>
+        window.PUBLIC_URL = "/app", "undefined" == typeof globalThis && (globalThis = window), console.log(new Date, (new Date).getMilliseconds(), "[startup] html load");
+        var hideConsole = !1;
+        (-1 < window.location.href.search(/kaiheila/) || -1 < window.location.href.search(/kookapp/)) && -1 == window.location.href.search(/#test/) && (hideConsole = !0, window.console._log = window.console.log, window.console._debug = window.console.debug, window.console.log = function() {}, window.console.debug = function() {})
+    </script>
+    <script src="https://g.alicdn.com/AWSC/AWSC/awsc.js"></script>
+    <script src="/app/assets/lib/aes.js"></script>
+    <script src="/app/assets/lib/twemoji.12.1.5.min.js"></script>
+    <script src="/app/assets/lib/libamr-min.js"></script>
+    <script src="/app/assets/lib/pcmdata-2.0.0.min.js"></script>
+    <script src="/app/assets/lib/markdown-parse.0.0.9.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        ! function() {
+            var e = document.createElement("script");
+            e.src = "https://hm.baidu.com/hm.js?ad9a793420ed959cf56a032b6eb75140";
+            var t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        }()
+    </script>
+    <link href="/app/static/css/2.1d95eb77.chunk.css" rel="stylesheet">
+    <link href="/app/static/css/3.596be6d6.chunk.css" rel="stylesheet">
+    <link href="/app/static/css/4.14b436a2.chunk.css" rel="stylesheet">
+    <link href="/app/static/css/index.69360dd7.chunk.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <link href="/app/static/css/kook.video.css" rel="stylesheet">
+    <div id="bg">
+        <video id="v1" autoplay loop muted>
+          <source src="/app/static/videos/Anime-Girl-With-Red-Hair.mp4" type="video/mp4"  />
+        </video>
+    </div>
+    <div id="root"></div>
+    <script src="/app/assets/lib/noscript.js"></script>
+    <script>
+        ! function(l) {
+            function e(e) {
+                for (var r, t, n = e[0], o = e[1], u = e[2], a = 0, i = []; a < n.length; a++) t = n[a], Object.prototype.hasOwnProperty.call(f, t) && f[t] && i.push(f[t][0]), f[t] = 0;
+                for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]);
+                for (s && s(e); i.length;) i.shift()();
+                return c.push.apply(c, u || []), p()
+            }
+
+            function p() {
+                for (var e, r = 0; r < c.length; r++) {
+                    for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+                        var u = t[o];
+                        0 !== f[u] && (n = !1)
+                    }
+                    n && (c.splice(r--, 1), e = a(a.s = t[0]))
+                }
+                return e
+            }
+            var t = {},
+                f = {
+                    10: 0
+                },
+                c = [];
+
+            function a(e) {
+                if (t[e]) return t[e].exports;
+                var r = t[e] = {
+                    i: e,
+                    l: !1,
+                    exports: {}
+                };
+                return l[e].call(r.exports, r, r.exports, a), r.l = !0, r.exports
+            }
+            a.m = l, a.c = t, a.d = function(e, r, t) {
+                a.o(e, r) || Object.defineProperty(e, r, {
+                    enumerable: !0,
+                    get: t
+                })
+            }, a.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, a.t = function(r, e) {
+                if (1 & e && (r = a(r)), 8 & e) return r;
+                if (4 & e && "object" == typeof r && r && r.__esModule) return r;
+                var t = Object.create(null);
+                if (a.r(t), Object.defineProperty(t, "default", {
+                        enumerable: !0,
+                        value: r
+                    }), 2 & e && "string" != typeof r)
+                    for (var n in r) a.d(t, n, function(e) {
+                        return r[e]
+                    }.bind(null, n));
+                return t
+            }, a.n = function(e) {
+                var r = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return a.d(r, "a", r), r
+            }, a.o = function(e, r) {
+                return Object.prototype.hasOwnProperty.call(e, r)
+            }, a.p = "/app/";
+            var r = window["webpackJsonpkaihei-react"] = window["webpackJsonpkaihei-react"] || [],
+                n = r.push.bind(r);
+            r.push = e, r = r.slice();
+            for (var o = 0; o < r.length; o++) e(r[o]);
+            var s = n;
+            p()
+        }([])
+    </script>
+    <script src="/app/static/js/0.467ff02a.chunk.js"></script>
+    <script src="/app/static/js/2.853ff886.chunk.js"></script>
+    <script src="/app/static/js/1.6416ce07.chunk.js"></script>
+    <script src="/app/static/js/3.c67b27df.chunk.js"></script>
+    <script src="/app/static/js/4.f9834cd5.chunk.js"></script>
+    <script src="/app/static/js/index.969d4f54.chunk.js"></script>
+</body>
+
+</html>
