@@ -14,7 +14,7 @@
 
 2. 在`kook安装目录\resources\app\webapp\build\static\videos`文件夹中放入要用作背景的MP4视频文件（最好为16：9），然后记住视频文件名
 
-3. 用你喜欢的文本编辑器打开`开黑啦安装目录\resources\app\webapp\build\index.htm`(如果怕修改错误可以先备份一下)。
+3. 用你喜欢的文本编辑器打开`kook安装目录\resources\app\webapp\build\index.htm`(如果怕修改错误可以先备份一下)。
    找到行`<noscript>You need to enable JavaScript to run this app.</noscript>`,在它后面加上如下代码：
    
    ```html
